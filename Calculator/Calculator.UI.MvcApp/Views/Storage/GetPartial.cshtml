@@ -1,0 +1,13 @@
+﻿@model IEnumerable<Calculator.Presentation.ViewModels.OperationDescriptionViewModel>
+
+@foreach (var operationDescriptionViewModel in Model)
+{
+    <tr>
+        <td>@operationDescriptionViewModel.OperationTime</td>
+        <td>@operationDescriptionViewModel.Argument1</td>
+        <td>@operationDescriptionViewModel.OperationType</td>
+        <td>@operationDescriptionViewModel.Argument2</td>
+        <td>=</td>
+        <td>@operationDescriptionViewModel.OperationResult</td>
+    </tr>
+}

@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<OperationDescriptions>
+  <OperationDescription Argument1="122" Argument2="654" OperationType="Multiplication" OperationResult="79788" OperationTime="23.08.2013 9:40:50" />
+  <OperationDescription Argument1="76" Argument2="8765" OperationType="Division" OperationResult="0,008670849971477467199087279" OperationTime="23.08.2013 12:39:32" />
+  <OperationDescription Argument1="765" Argument2="54" OperationType="Multiplication" OperationResult="41310" OperationTime="25.08.2013 19:55:46" />
+  <OperationDescription Argument1="54" Argument2="654" OperationType="Addition" OperationResult="708" OperationTime="25.08.2013 20:20:53" />
+  <OperationDescription Argument1="234" Argument2="245252" OperationType="Addition" OperationResult="245486" OperationTime="25.08.2013 20:23:09" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Addition" OperationResult="2" OperationTime="25.08.2013 23:05:16" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Subtraction" OperationResult="0" OperationTime="25.08.2013 23:05:25" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Multiplication" OperationResult="1" OperationTime="25.08.2013 23:05:27" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Division" OperationResult="1" OperationTime="25.08.2013 23:05:30" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Division" OperationResult="1" OperationTime="25.08.2013 23:05:31" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Addition" OperationResult="2" OperationTime="25.08.2013 23:05:33" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Subtraction" OperationResult="0" OperationTime="25.08.2013 23:05:35" />
+  <OperationDescription Argument1="1" Argument2="1" OperationType="Subtraction" OperationResult="0" OperationTime="25.08.2013 23:05:38" />
+  <OperationDescription Argument1="1" Argument2="2" OperationType="Addition" OperationResult="3" OperationTime="25.08.2013 23:27:55" />
+  <OperationDescription Argument1="2" Argument2="4" OperationType="Addition" OperationResult="6" OperationTime="25.08.2013 23:27:58" />
+  <OperationDescription Argument1="1" Argument2="2" OperationType="Addition" OperationResult="3" OperationTime="26.08.2013 0:05:19" />
+  <OperationDescription Argument1="1" Argument2="2" OperationType="Subtraction" OperationResult="-1" OperationTime="26.08.2013 0:05:23" />
+  <OperationDescription Argument1="1" Argument2="2" OperationType="Multiplication" OperationResult="2" OperationTime="26.08.2013 0:05:25" />
+  <OperationDescription Argument1="1" Argument2="2" OperationType="Division" OperationResult="0,5" OperationTime="26.08.2013 0:05:27" />
+  <OperationDescription Argument1="23" Argument2="34" OperationType="Addition" OperationResult="57" OperationTime="26.08.2013 0:12:31" />
+  <OperationDescription Argument1="34" Argument2="234" OperationType="Multiplication" OperationResult="7956" OperationTime="26.08.2013 0:55:30" />
+  <OperationDescription Argument1="34" Argument2="234" OperationType="Multiplication" OperationResult="7956" OperationTime="26.08.2013 0:55:46" />
+  <OperationDescription Argument1="34" Argument2="234" OperationType="Multiplication" OperationResult="7956" OperationTime="26.08.2013 0:55:47" />
+  <OperationDescription Argument1="1" Argument2="2" OperationType="Addition" OperationResult="3" OperationTime="26.08.2013 2:07:57" />
+  <OperationDescription Argument1="314" Argument2="2434" OperationType="Division" OperationResult="0,1290057518488085456039441249" OperationTime="26.08.2013 2:09:43" />
+</OperationDescriptions>

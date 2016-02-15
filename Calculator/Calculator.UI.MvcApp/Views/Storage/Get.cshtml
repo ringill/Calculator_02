@@ -1,0 +1,44 @@
+﻿@model bool
+
+@{
+    ViewBag.Title = "Описания операций";
+
+    AjaxOptions ajaxOpts = new AjaxOptions
+    {
+        UpdateTargetId = "tableBody",
+        Url = Url.Action("GetPartial"),
+        LoadingElementId = "loading",
+        LoadingElementDuration = 500
+    };
+}
+
+<h4>Последние 5 операций</h4>
+
+<div id="loading" class="load" style="display: none">
+    <p>Получение данных...</p>
+</div>
+
+
+<table>
+    <thead>
+        <tr>
+            <th>Время</th>
+            <th colspan ="5">Операция</th>
+        </tr>
+    </thead>
+    <tbody id="tableBody">
+        @{
+            if (Model)
+            {
+                Html.Action("GetPartial");
+            }
+        }
+    </tbody>
+</table>
+
+@using (Ajax.BeginForm(ajaxOpts))
+{
+    <div>
+        <button type="submit">Обновить</button>
+    </div>
+}

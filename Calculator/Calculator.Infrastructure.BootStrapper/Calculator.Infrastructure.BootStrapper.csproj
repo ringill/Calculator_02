@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{120ECC96-2AEE-4189-9D68-E7F639755BD6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Calculator.Infrastructure.BootStrapper</RootNamespace>
+    <AssemblyName>Calculator.Infrastructure.BootStrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.Unity, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity.Configuration, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Unity.3.0.1304.0\lib\Net45\Microsoft.Practices.Unity.Configuration.dll</HintPath>
+    </Reference>
+    <Reference Include="Ninject">
+      <HintPath>..\packages\Ninject.3.0.1.10\lib\net45-full\Ninject.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Bootstrapper.cs" />
+    <Compile Include="NinjectBootstrapper.cs" />
+    <Compile Include="NinjectDependencyResolver.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculator.DataAccess.EF\Calculator.DataAccess.EF.csproj">
+      <Project>{454f272b-b77c-431b-80f7-9baf3995c460}</Project>
+      <Name>Calculator.DataAccess.EF</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.DataAccess.NHibernate\Calculator.DataAccess.NHibernate.csproj">
+      <Project>{98c49337-8f2d-4065-950e-ca11dacd589e}</Project>
+      <Name>Calculator.DataAccess.NHibernate</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.DataAccess.Sql\Calculator.DataAccess.Sql.csproj">
+      <Project>{27c65542-eb91-4397-a686-219d1a5a92c7}</Project>
+      <Name>Calculator.DataAccess.Sql</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.DataAccess.Xml\Calculator.DataAccess.Xml.csproj">
+      <Project>{12984b94-a624-48bb-9fc6-3d3b0b940f53}</Project>
+      <Name>Calculator.DataAccess.Xml</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.Domain\Calculator.Domain.csproj">
+      <Project>{c0959751-970a-4fc9-8953-e2aac580af03}</Project>
+      <Name>Calculator.Domain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.Presentation.AbstractPresenters\Calculator.Presentation.AbstractPresenters.csproj">
+      <Project>{59802417-abf7-445f-8459-cc4204b1a80a}</Project>
+      <Name>Calculator.Presentation.AbstractPresenters</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.Presentation.Presenter\Calculator.Presentation.Presenter.csproj">
+      <Project>{241bd044-378c-4ac1-96e2-479be6b32b9b}</Project>
+      <Name>Calculator.Presentation.Presenter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Calculator.Utils\Calculator.Utils.csproj">
+      <Project>{ec210030-e580-4254-854a-36a0bb490ea9}</Project>
+      <Name>Calculator.Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

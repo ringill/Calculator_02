@@ -1,0 +1,7 @@
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\bin\Debug\Calculator.Presentation.AbstractPresenters.dll
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\bin\Debug\Calculator.Presentation.AbstractPresenters.pdb
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\bin\Debug\Calculator.Presentation.ViewModels.dll
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\bin\Debug\Calculator.Presentation.ViewModels.pdb
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\obj\Debug\Calculator.Presentation.AbstractPresenters.csprojResolveAssemblyReference.cache
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\obj\Debug\Calculator.Presentation.AbstractPresenters.dll
+C:\Users\Mikle\Desktop\Calculator\Calculator.Presentation.AbstractPresenters\obj\Debug\Calculator.Presentation.AbstractPresenters.pdb
